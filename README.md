@@ -559,7 +559,7 @@ Server information and capabilities overview
 
 ```json
 {
-  "name": "FluidSDK MCP Server",
+  "name": "Sovereign Swarm MCP Server",
   "version": "1.0.0",
   "status": "healthy",
   "endpoints": {
@@ -630,13 +630,6 @@ Main MCP protocol endpoint using Server-Sent Events (SSE)
    - Debugging assistance prompts
    - Args: `error_type`
 
-### Resources (Data Access)
-
-1. **fluidsdk://config** - Server configuration
-2. **fluidsdk://status** - Real-time server status
-3. **fluidsdk://docs/api** - API documentation
-4. **fluidsdk://docs/quickstart** - Quick start guide
-
 ## Deploy to Vercel
 
 ### Option 1: Vercel CLI
@@ -691,10 +684,10 @@ EXPOSE 3000
 CMD ["node", "dist/index.js"]
 ```
 
-## Usage with FluidSDK
+## Usage with Sovereign Swarm
 
 ```typescript
-import { FluidSDK } from "fluidsdk";
+import { Sovereign } from "sovereign-swarm";
 
 // Create agent with your deployed MCP server
 const agent = sdk.createAgent("My Agent", "Description", "image");
@@ -811,12 +804,6 @@ app.use((req, res, next) => {
   next();
 });
 ```
-
-## Support
-
-- Documentation: https://docs.fluidsdk.io
-- GitHub Issues: https://github.com/yourusername/fluidsdk
-- Discord: https://discord.gg/fluidsdk
 
 ## License
 
